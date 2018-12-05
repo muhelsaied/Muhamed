@@ -139,6 +139,7 @@ margin-right: 15px;
 }
 
 .git-hub{
+  background: #000;
   background: #000e;
 }
 .whatsapp{
@@ -316,9 +317,11 @@ header{
 }
 /*=-===============================================courses section=================================================*/
 .container-courses{
- margin: 3% auto;
- max-width: 1300px;
- width: 100%;
+box-sizing: border-box;
+box-shadow: 0 20px  20px 0 rgba(0,0,0,0.5);
+margin: 3% auto;
+max-width: 1300px;
+width: 100%;
 background: #41295a;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -507,6 +510,8 @@ transform: scale(1.05);
 }
 /*-------------------------------------------------------------contact-form---------------------------------------*/
 .container-form{
+  box-sizing: border-box;
+  box-shadow: 0 20px  20px 0 rgba(0,0,0,0.2);
   margin:3% auto;
   background: #607d8b;
   max-width: 1200px;
@@ -691,4 +696,27 @@ input[type=message].message{
   padding-top:15%;
   padding-bottom:15%; 
 
+}
+/*---------------------------------------------------------------footer---------------------------------------*/
+footer{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+footer h5{
+  text-align: center;
+  display: block;
+  color: #eee;
+  font-size: .5em;
+  margin: 5px auto;
+}
+footer p{
+  text-align: center;
+  display: block;
+  color: #eee;
+  margin: 5px auto;
+  font-size: .4em;
 }
