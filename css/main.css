@@ -165,9 +165,15 @@ header{
 .inf-contact{
   background-color: transparent;
   height: 350px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
   perspective: 1000px;
   cursor: pointer;
     margin: 10% auto;
+}
+.moe{
+  margin: 20px auto;
 }
 .flip-card-inner {
   position: relative;
@@ -179,11 +185,19 @@ header{
   box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
   height: 100%;
   text-align: center;
+  -webkit-transform:transform 0.6s;
+  -moz-transform:transform 0.6s;
+  -o-transform:transform 0.6s;
   transition: transform 0.6s;
+  -webkit-transform:preserve-3d;
+  -moz-transform:preserve-3d;
+  -o-transform:preserve-3d;
   transform-style: preserve-3d;
-  margin: 20px auto;
 }
-.inf-contact:hover .flip-card-inner {
+.flip-card-inner:active{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .my_img,
@@ -211,6 +225,9 @@ header{
   box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
 }
 .my_inf{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   z-index: 1;
   padding: 20% 1%;

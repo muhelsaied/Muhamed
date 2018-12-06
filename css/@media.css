@@ -105,6 +105,9 @@ input[type=message].message{
 .course-header{
   font-size: 2rem;
 }
+.register-wrapper{
+    padding: 30px;
+  }
 .register-title{
   font-size: .9rem;
 }
@@ -148,7 +151,7 @@ footer{
   margin: 20px auto;
 }
  .register-wrapper{
-    padding: 55px;
+    padding: 35px;
   }
   .register-title{
     font-size: .75rem;
@@ -171,7 +174,7 @@ input[type=message].message{
     flex-direction: column;
   }
   .register-wrapper{
-    padding: 20px;
+    padding: 25px;
   }
   .register-title{
     font-size: .75rem;
