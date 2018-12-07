@@ -170,7 +170,7 @@ header{
   -o-perspective: 1000px;
   perspective: 1000px;
   cursor: pointer;
-    margin: 10% auto;
+  margin: 10% auto;
 }
 .moe{
   margin: 20px auto;
@@ -195,10 +195,10 @@ header{
   transform-style: preserve-3d;
 }
 .flip-card-inner:active{
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 .my_img,
 .My_inf{
@@ -225,10 +225,10 @@ header{
   box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
 }
 .my_inf{
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
   z-index: 1;
   padding: 20% 1%;
   background: #eee;
@@ -424,12 +424,18 @@ background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, F
   box-shadow:6px 9px 30px rgba(0,0,0,.6);
   border-radius: 3%;
   flex-wrap: wrap;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   margin: 1rem 0;
   background: #eee;
 
 }
 .course-obj:hover{
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-o-transform: scale(1.05);
 transform: scale(1.05);
 }
 
